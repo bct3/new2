@@ -1,0 +1,168 @@
+!DOCTYPE html>
+<html>
+<head>
+	<title>Support</title><!--Title of the website-->
+
+<!--Script tags fro the styling and CSS-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript"></script>
+<script src='OSC.js'></script><!-- Implemented to handel the canvas -->
+</head>
+<body><!--THe body starts here-->
+<!--CONTAINER-->
+	<div id="container">
+	<div id="header">
+	  <table><tr style="color: blue;"><td id="logo" > <img src="img/logo.jpg"> </td><td id="comname"> <header><h1> REC TECHNOLOGIES LIMITED</h1></header>
+	  <h3>For All Technology  Solutions</h3></td> <td id="con" style="color:green; text-decoration: none; padding-left:450px;"><a href="contact.html"><li>Contact Us</li></a></td> </tr> 
+	  </table> 
+	 </div><!--Header closes-->>
+
+	<!--Navigation Tags here-->
+	<div id="nav">
+		<ul><!--consist of the links to other pages-->
+			<a href="index.html"><li>Home</li></a>
+			<a href="about-us.html"><li>About-Us</li></a>
+			<a href="service.html"><li>Services</li></a>
+			<a href="contact.html"><li>Contact Us</li></a>
+			<a href="support.html"><li>Support</li></a>
+			<a href="gallery.html"><li>Gallery</li></a>
+			<li><input id="search" name="search" type="text" onclick="search.php" placeholder="Search">
+            <button name="button type="button" onclick="submit();" ">search</button>
+			</li>
+			
+
+		</ul>
+
+	 </div><!--nav closes-->
+
+
+<!--Main open-->	 
+	<div id="main"> 
+
+		<div id="left-side" ><section style="background-color:green">
+		 <h1>Implementing the Html5 Canvas</h1>
+			<canvas id="mycanvas" width="200" height="200"> This is the canvas here so lets go</canvas>
+			<!-- Implementing the js part to control the canvas -->
+			<script type="text/javascript">
+				canvas  = o('mycanvas')
+				context =  canvas.getContext('2d')
+				context.fillStyle='red'
+				S(canvas).border = '1px solid black'
+				context.beginPath()
+				context.moveTo(160, 120)
+				context.arc(160, 120, 70, 0, Math.PI*2, false)
+				context.closePath()
+				context.fill()
+
+			</script>
+
+
+		</section> <section></section></div>
+		<div id="right-side">
+				<div id="news-letter-head">
+				 
+
+			<h2>Latest News</h2>		 
+					
+			<p>Any updates uploaded here</p>
+			<p>Any updates uploaded here</p>
+			<p>Any updates uploaded here</p>
+			<p>Any updates uploaded here</p>
+		
+			</div>
+				
+		
+				
+			<div id="qns"> <header>FAQs</header> 
+			<br>
+			The following are the answered question from our clients.
+			
+
+<main>
+    <section id="">
+    	<article></article>
+    </section>
+	<aside id=""></aside>
+</main>
+<footer></footer>
+
+
+			</div>
+
+		</div>
+		<div style="clear: both;"></div>
+		</div> <!--Main closes-->
+
+<!--FOOTER-->
+ 
+	<!--FOOTER-->
+ 
+	<div id="footer">
+
+	<div  id="qlinks">
+
+		<h2>Quick links</h2>
+		<ul>
+
+			 <li><a href="#">Home</a></li>
+			 <li><a href="about-us.html">About-us</a></li>
+  			 <li><a href="service.html">Services</a></li>
+  			 <a href="support.html">Support</a></li>
+   			 <li><a href="contact.html">Contacts</a></li>
+   			 <li><a href="gallery.html">Gallery</a></li>
+  			
+ </ul>
+	</div>
+
+	<div  id="contact";> 
+
+		<h3 >Contacts</h3></span>
+		<address>
+                              JOY TECH<br>ZION PLAZA<br>Rm 300 2rd Floor.<br>
+
+                              P.O Box36  2144 Nkumba.</br>
+                              KAMPALA</br>
+                              UGANADA
+
+                        </address>
+
+	</div>
+
+	<div id="socialmed"; >
+		<h3>Social Media</h3>
+		  <ul >
+		<li>
+		  <img src="img/facebook.jpg" width="60px" height="40px">
+		</li>
+		
+		<li>
+
+
+	 <div id="copy">
+		  <img src="img/twitter.jpg" width="60px" height="40px">
+		</li>
+		
+		<li>
+		  <img src="img/youtube.png " width="60px" height="40px">
+		</li>
+		  
+		</ul>
+	</div>
+
+	<div id="form" ><h3 style="text-align: center">Subscription Form</h3>
+
+				<label>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><textarea type="text" id="user-name" placeholder="Enter you Name" style="resize: none;"></textarea><br>			            
+				<label>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><textarea type="text" id="user-email" placeholder="Enter Email" style="resize: none;"></textarea><br>
+				<label>Message:</label><textarea type="text" id="user-message" placeholder="Enter you message" style="resize: none;" maxlength="65525" aria-required="true" required="required"></textarea>
+				<input type="submit" name="submit" onsubmit="" value="submit" style=" width:100px;">
+	</div>
+<p onclick="alert('Are sure!!!! But u are not connected')">Tech Support: WebDesign rectech@gmail.com </p>Joy Technologies limited 2016 &copy; Copyright&nbsp;@THub&nbsp;2016</p>
+</div>
+		
+	</div><!--Footer closes--><!--Footer closes-->
+	
+</div><!--CONTAINER closes-->
+
+
+</body>
+</html>
